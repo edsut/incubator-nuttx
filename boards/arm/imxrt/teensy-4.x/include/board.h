@@ -18,8 +18,8 @@
  *
  ****************************************************************************/
 
-#ifndef __BOARDS_ARM_IMXRT_TEENSY_4_INCLUDE_BOARD_H
-#define __BOARDS_ARM_IMXRT_TEENSY_4_INCLUDE_BOARD_H
+#ifndef __BOARDS_ARM_IMXRT_TEENSY_4X_INCLUDE_BOARD_H
+#define __BOARDS_ARM_IMXRT_TEENSY_4X_INCLUDE_BOARD_H
 
 /****************************************************************************
  * Included Files
@@ -233,6 +233,8 @@
 #define GPIO_LPUART3_TX      (GPIO_LPUART3_TX_1|IOMUX_UART_DEFAULT) /* GPIO_AD_B1_06 */
 #define GPIO_LPUART6_RX      (GPIO_LPUART6_RX_1|IOMUX_UART_DEFAULT) /* GPIO_AD_B0_03 */
 #define GPIO_LPUART6_TX      (GPIO_LPUART6_TX_1|IOMUX_UART_DEFAULT) /* GPIO_AD_B0_02 */
+#define GPIO_LPUART7_RX      (GPIO_LPUART7_RX_1|IOMUX_UART_DEFAULT) /* EMC_32 */
+#define GPIO_LPUART7_TX      (GPIO_LPUART7_TX_1|IOMUX_UART_DEFAULT) /* EMC_31 */
 
 /* LPI2Cs */
 
@@ -306,4 +308,4 @@ extern "C"
 #endif
 
 #endif /* __ASSEMBLY__ */
-#endif /* __BOARDS_ARM_IMXRT_TEENSY_4_INCLUDE_BOARD_H */
+#endif /* __BOARDS_ARM_IMXRT_TEENSY_4X_INCLUDE_BOARD_H */
