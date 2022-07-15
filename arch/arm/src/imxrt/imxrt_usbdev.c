@@ -944,6 +944,10 @@ static int imxrt_progressep(struct imxrt_ep_s *privep)
     }
 
   int bytesleft = privreq->req.len - privreq->req.xfrd;
+  if (bytesleft < 0) {
+    _alert("Caught the hardfault!\n");
+    PANIC();
+  }
 
   if (IMXRT_EPPHYIN(privep->epphy))
     {
